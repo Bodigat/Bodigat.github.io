@@ -47,7 +47,7 @@ section {
 }
 
 .col-1400 section:first-of-type {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 select {
@@ -103,7 +103,7 @@ select>option {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
 }
 
 .play-btn:hover {
@@ -135,7 +135,7 @@ button {
     min-width: 160px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
 }
 
 button:hover {
@@ -146,7 +146,7 @@ button:hover {
     background-color: #1a2336;
     padding: 16px;
     border-radius: 4px;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
 }
 
 .width-20 {
@@ -231,11 +231,11 @@ a {
     color: #ffffff;
 }
 
-#verlinkunghinzu {
+#add-link {
     padding-left: 1200px;
 }
 
-#verlinkunghinzu2 {
+#add-link2 {
     padding-left: 1300px;
 }
 
@@ -284,7 +284,7 @@ footer {
     padding: 16px 100px;
     font-size: 20px;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
     right: 0;
     text-align: end;
@@ -298,22 +298,20 @@ footer {
     margin-top: 230px;
 }
 
-#Antwort {
-    margin: 0;
-    margin-top: 40px;
+#answer {
+    margin: 40px 0 0;
 }
 
-#Prüfen {
+#check {
     text-align: center;
-    margin: 0;
-    margin-left: 600px;
+    margin: 0 0 0 600px;
 }
 
-#löschen {
+#delete {
     margin-right: 1100px;
 }
 
-#Übungsliste {
+#exercise-list {
     border: 2px;
     color: #fff;
     background-color: #161b2cb0;
@@ -321,18 +319,18 @@ footer {
     font-size: 25px;
     margin-left: 700px;
 }
-
+/* Unused id
 #Abtrennung {
     color: red;
     font-size: 25px;
     white-space: nowrap;
 }
-
-#überprüfungstext {
+*/
+#checkText {
     color: #fff;
     font-size: 20px;
 }
 
-#Hinzufügebutton {
+#add-button {
     margin-left: 1100px;
 }
