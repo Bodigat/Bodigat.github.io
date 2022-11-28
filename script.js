@@ -3,7 +3,7 @@ let dictionary = JSON.parse(localStorage.getItem('dictionary')) || {
 };
 let ran_key;
 
-function übunghinuzfügen() {
+function addExercise() {
     dictionary[Frage.value] = input2.value;
 
     Frage.value = "";
@@ -20,11 +20,11 @@ function render() {
     }
 }
 
-function löschen() {
+function remove() {
     localStorage.clear();
 }
 
-function nächstübung() {
+function nextExercise() {
     let obj_keys = Object.keys(dictionary);
     ran_key = obj_keys[Math.floor(Math.random() * obj_keys.length)];
     diefrage.innerHTML = `${dictionary[ran_key]}?`;
@@ -32,8 +32,8 @@ function nächstübung() {
     Antwort.value = "";
 }
 
-function richtigfalsch() {
-    if (Antwort.value == ran_key) {
+function checkAnswer() {
+    if (Antwort.value === ran_key) {
         überprüfungstext.innerHTML = `Richtig (;`;
     } else {
         überprüfungstext.innerHTML = `Das ist leider falsch ;(`;

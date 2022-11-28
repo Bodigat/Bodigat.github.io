@@ -12,35 +12,39 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <span>Schul-Übungsapp</span>
-            <a id="verlinkunghinzu" rel="stylesheet" href="Übungenhinzu..html">Übungen-Hinzufügen</a>
-        </div>
-    </header>
+<header>
+    <div>
+        <span>Schul-Übungsapp</span>
+        <a id="add-link" rel="stylesheet" href="add.html">Übungen-Hinzufügen</a>
+    </div>
+</header>
 
-    <main id="main">
-        <div>
-            <h1>Frage:</h1>
-            <h3 id="diefrage"></h3>
+<main id="main">
+    <div>
+        <h1>Frage:</h1>
+        <h3 id="question"></h3>
 
-            <form onsubmit="richtigfalsch(); return false;">
-                <input id="Antwort" type="text" placeholder="A n t w o r t"></input>
-                <h1></h1>
-                <button id="Prüfen">Prüfen</button>
-            </form>
-        </div>
+        <form onsubmit="checkAnswer(); return false;">
 
-        <h3 id="überprüfungstext"></h3>
+            <label>
+                <input id="answer" type="text" placeholder="A n t w o r t">
+            </label>
 
-    </main>
+            <h1></h1>
+            <button id="check">Prüfen</button>
+        </form>
+    </div>
 
-    <footer>
-        <div>
-            <button onclick="nächstübung()" id="löschen">Übung Starten</button>
-            <span>Made by: <a href="https://github.com/Bodigat" target="_blank">U:Bodigat Development</a> </span>
-        </div>
-    </footer>
+    <h3 id="checkText"></h3>
+
+</main>
+
+<footer>
+    <div>
+        <button onclick="nextExercise()" id="delete">Übung Starten</button>
+        <span>Made by: <a href="https://github.com/Bodigat" target="_blank">U:Bodigat Development</a> </span>
+    </div>
+</footer>
 
 </body>
 
