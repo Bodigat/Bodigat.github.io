@@ -304,7 +304,7 @@ footer {
 
 #check {
     text-align: center;
-    margin: 0 0 0 600px;
+    /* margin: 0 0 0 300px; Removed now is the button below the form */
 }
 
 #delete {
@@ -332,5 +332,6 @@ footer {
 }
 
 #add-button {
-    margin-left: 1100px;
+    text-align: center;
+    margin-left: 48%;
 }
