@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übungen-Hinzufügen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="render()">
+    <header>
+        <div>
+            <span>Übungen-Hinzufügen</span>
+            <a id="verlinkunghinzu2" rel="stylesheet" href="index.html">Übung</a>
+        </div>
+    </header>
+
+    <form onsubmit="übunghinuzfügen(); return false;">
+        <input id="input2" type="text" placeholder="F r a g e  ?"></input>
+
+        <input id="Frage" type="text" placeholder="L ö s u n g 💡"></input>
+
+        <h1></h1>
+
+        <button id="Hinzufügebutton">Hinzufügen</button>
+    </form>
+
+
+    <ul id="Übungsliste">
+    </ul>
+
+    <footer>
+        <div>
+            <button onclick="löschen(), window.location.reload()" id="löschen">Alle Übungen Löschen</button>
+            <span>Made by: <a href="https://github.com/Bodigat" target="_blank">U:Bodigat Development</a> </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
