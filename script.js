@@ -41,4 +41,4 @@ function richtigfalsch() {
             `<div id="lösungstext"> <h4>Das wäre die Lösung gewesen:</h4> <br> ${ran_key} </div>`;
     }
     nächstübung();
-}
+} 
